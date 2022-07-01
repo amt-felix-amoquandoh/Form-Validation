@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/brand Icon/suit.png"
+    />
+    <title>title here</title>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!--project starts -->
+    <div class="container">
+      <div class="title">Registration</div>
+      <form action="#">
+        <div class="userDetails">
+          <label for="fullname" class="details">Full Name</label>
+          <input type="text" placeholder="enter your full name" required />
+        </div>
+        <div class="userDetails">
+          <label for="username" class="details">User Name</label>
+          <input type="text" placeholder="eg. @pipiro" required />
+        </div>
+        <div class="userDetails">
+          <label for="email" class="details">Email</label>
+          <input type="email" placeholder="something@gmail.com" required />
+        </div>
+        <div class="userDetails">
+          <label for="phonenumber" class="details">Phone Number</label>
+          <input type="text" placeholder="+2** *** *** ***" required />
+        </div>
+        <div class="userDetails">
+          <label for="password" class="details">Password</label>
+          <input type="text" placeholder="at least 8 characters" required />
+        </div>
+        <div class="userDetails">
+          <label for="confirm password" class="details">Confirm Password</label>
+          <input type="text" placeholder="confirm password" required />
+        </div>
+        <div class="genders">
+          <span class="genderTitle">Gender</label>
+            <div class="category">
+              <label for="">
+                <span class="selectOne"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="">
+                <span class="selectOne"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="">
+                <span class="selectOne"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="register">
+        </div>
+      </form>
+    </div>
+    <!-- project ends here-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
