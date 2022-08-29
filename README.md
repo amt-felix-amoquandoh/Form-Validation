@@ -1,2 +1,2 @@
 # Form-Validation
-A modern day form format learnt form The Odin project
+A modern day Javascript form validation format 
