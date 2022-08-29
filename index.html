@@ -29,33 +29,36 @@
      <div class="row">
        <form class="col s12" id="signUpForm" novalidate>
          <div class="row">
+
            <div class="input-field col s6">  
             <label for="firstName">First Name</label>          
-             <input id="firstName" type="text" class="validate" onfocusout="validateFirstName()">            
+             <input name="First Name" id="firstName" type="text" class="validate" onfocusout="validateFirstName()">            
              <span class="info-text"></span>
            </div>
+
            <div class="input-field col s6">
              <label for="lastName">Last Name</label>
-             <input id="lastName" type="text" class="validate" onfocusout="validateLastName()">            
+             <input name="Last Name"  id="lastName" type="text" class="validate" onfocusout="validateLastName()">            
              <span class="info-text"></span>
            </div>
          </div>
    
          <div class="row">
            <div class="input-field col s6">
-             <input id="passKey" type="password" class="validate" onfocusout="validatePassKey()">
+             <input name="Password"  id="passKey" type="password" class="validate" onfocusout="validatePassKey()">
              <span class="info-text"></span>
              <label for="passKey">Password</label>             
            </div>
+
            <div class="input-field col s6">
             <label for="confirmPassKey">Confirm Password</label>
-             <input id="confirmPassKey" type="password" class="validate" onfocusout="validateConfirmPassKey()">
+             <input name="Password" id="confirmPassKey" type="password" class="validate" onfocusout="validateConfirmPassKey()">
              <span class="info-text"></span>
            </div>
          </div>
          <div class="row">
            <div class="input-field col s12">
-             <input id="email" type="email" class="validate" onfocusout="validateEmail()">
+             <input name="Email"  id="email" type="email" class="validate" onfocusout="validateEmail()">
              <span class="info-text"></span>
              <label for="email">Email</label>             
            </div>
