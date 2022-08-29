@@ -8,3 +8,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.signBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle{
+    text-align: center;
+    color: teal;
+}
+
+.signUpInner{
+    width: 850px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
