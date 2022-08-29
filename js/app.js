@@ -29,7 +29,11 @@ function validateLastName (){
 }
 
 //password validation
-function validatePassKey (){}
+function validatePassKey (){
+    if(checkEmptyField(password)) return;
+    if(!alphabets && digits(password)) return;
+    return true;
+}
 
 //confirm password validation
 function validateConfirmPassKey (){}
