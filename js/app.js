@@ -36,10 +36,18 @@ function validatePassKey (){
 }
 
 //confirm password validation
-function validateConfirmPassKey (){}
+function validateConfirmPassKey (){
+    if(checkEmptyField(password)) return;
+    if(!alphabets && digits(password)) return;
+    return true;
+}
 
 //email validation
-function validateEmail (){}
+function validateEmail (){
+    if(checkEmptyField(password)) return;
+    if(!alphabets && digits(password)) return;
+    return true;
+}
 
 
 function checkEmptyField (field){
