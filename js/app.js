@@ -77,14 +77,15 @@ function setValid(field){
     // field.nextElementSibling.style.color = validColor;
 }
 
-
 function checkAlphabets(field){
-   var letters = /^[A-Za-z]+$/;
-   if(field.value.match(letters)){
-     setValid(field);
-      return true;
-     } else {
+    if(/[^a-zA-Z ]+$/.test(field.value)){
+        setValid(field);
+        return true;
+    } else{
         setInvalid(field, `${field.name} must contain only letters`);
         return false;
-     }
-  }
+    }   
+}
+
+
+
