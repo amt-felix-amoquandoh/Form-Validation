@@ -13,4 +13,23 @@ const form = document.getElementById("signUpForm");
 const valid = "green";
 const invalid = "red";
 
-//functions
+
+// firstName validation
+function validateFirstName (){
+    if(checkEmptyField(firstName)) return;
+};
+
+function checkEmptyField (field){
+    if(isInputEmpty(field.value.trim())){
+        setInvalid(field, `${field.name} must not be empty`);
+        return true;
+    } else {
+        setValid();
+        return false;
+    };
+};
+
+function isInputEmpty(value){
+    if(value === "") return true;
+    return false;
+}
