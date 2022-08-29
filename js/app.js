@@ -7,3 +7,10 @@ const email = document.getElementById("email");
 
 
 //form
+const form = document.getElementById("signUpForm");
+
+//colors for validation
+const valid = "green";
+const invalid = "red";
+
+//functions
