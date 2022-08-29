@@ -17,14 +17,14 @@ const invalidColor = "red";
 // firstName validation
 function validateFirstName (){
     if(checkEmptyField(firstName)) return;
-    if(!alphabets(firstName)) return;
+    if(!checkAlphabets(firstName)) return;
     return true;
 };
 
 //lastName Validation
 function validateLastName (){
     if(checkEmptyField(lastName)) return;
-    if(!alphabets(lastName)) return;
+    if(!checkAlphabets(lastName)) return;
     return true;
 }
 
@@ -37,15 +37,15 @@ function validatePassKey (){
 
 //confirm password validation
 function validateConfirmPassKey (){
-    if(checkEmptyField(password)) return;
-    if(!alphabets && digits(password)) return;
+    if(checkEmptyField(confirmPassword)) return;
+    if(!checkAlphabets && digits(confirmPassword)) return;
     return true;
 }
 
 //email validation
 function validateEmail (){
-    if(checkEmptyField(password)) return;
-    if(!alphabets && digits(password)) return;
+    if(checkEmptyField(email)) return;
+    if(!checkAlphabets(email)) return;
     return true;
 }
 
@@ -74,15 +74,17 @@ function setInvalid(field, message){
 function setValid(field){
     field.className = "valid"
     field.nextElementSibling.innerHTML = " ";
-    field.nextElementSibling.style.color = validColor;
+    // field.nextElementSibling.style.color = validColor;
 }
 
-function alphabets(field){
-    if(/^[a-zA-Z ]+ $/.test(field.value)){
-        setValid(field);
-        return true;
-    } else{
+
+function checkAlphabets(field){
+   var letters = /^[A-Za-z]+$/;
+   if(field.value.match(letters)){
+     setValid(field);
+      return true;
+     } else {
         setInvalid(field, `${field.name} must contain only letters`);
         return false;
-    }   
-}
+     }
+  }
