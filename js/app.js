@@ -109,4 +109,36 @@ function keyLength(field, minLength, maxLength){
 
 };
 
+function containsCriteria (field, code){
+    let criteria;
+    switch(code){
+        case 1:
+            //at least one letter
+            criteria = /(?=.*[a-zA-Z])/;
+            return matchCriteria(criteria, field, `Must contain at least one letter`);
+        case 2:
+            //at least one letter and one number
+            criteria = /(?=.*\d)(?=.*[a-zA-Z])/;
+            return matchCriteria(criteria, field, `Must contain at least one letter and one number`);
+        case 3:   
+        //at least one uppercase one lower case and a number
+             criteria = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
+             return matchCriteria(criteria, field, `Must contain at least one uppercase letter`);
+        case 4:
+            criteria = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
+            return matchCriteria(criteria, field, `Must contain at least one special character`);      
+        default:
+            return false;
+    }
+}
 
+
+function matchCriteria (criteria, field, message){
+    if(field.value.match(criteria)){
+        setValid(field);
+        return true;
+    } else {
+        setInvalid(field, message);
+        return false;
+    }
+}
