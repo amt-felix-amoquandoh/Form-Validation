@@ -30,16 +30,15 @@ function validateLastName (){
 
 //password validation
 function validatePassKey (){
-    if(checkEmptyField(password)) return;
-    if(!alphabets && digits(password)) return;
+    if(checkEmptyField(confirmPassword)) return;
+    if(!keyLength(password, 6, 100)) return;
+
     return true;
 }
 
 //confirm password validation
 function validateConfirmPassKey (){
-    if(checkEmptyField(confirmPassword)) return;
-    if(!checkAlphabets && digits(confirmPassword)) return;
-    return true;
+    
 }
 
 //email validation
@@ -77,6 +76,9 @@ function setValid(field){
     // field.nextElementSibling.style.color = validColor;
 }
 
+
+
+//check on this funvtion later................
 function checkAlphabets(field){
     if(/[^a-zA-Z ]+$/.test(field.value)){
         setValid(field);
@@ -87,5 +89,19 @@ function checkAlphabets(field){
     }   
 }
 
+
+function keyLength(field, minLength, maxLength){
+    if(field.value.length >= minLength && field.value.length < maxLength){
+        setValid(field);
+        return true;
+    } else if(field.value.length < minLength){
+        setInvalid(field, `${field.name} must be at least ${minLength} characters long`)
+        return false;
+    } else {
+        setInvalid(field, `${field.name} must not be shoter than ${maxLength}`);
+        return false;
+    }
+
+};
 
 
