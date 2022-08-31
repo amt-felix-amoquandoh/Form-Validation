@@ -32,7 +32,12 @@ function validateLastName (){
 function validatePassKey (){
     if(checkEmptyField(confirmPassword)) return;
     if(!keyLength(password, 6, 100)) return;
-
+    //checking password against the following
+    //at least one letter
+    //at least one letter and one number
+    //at least one uppercase one lower case and a number
+    //at least one uppercase one lower case a number and one special character
+    if(!containsCriteria(password, 1)) return;
     return true;
 }
 
@@ -80,7 +85,7 @@ function setValid(field){
 
 //check on this funvtion later................
 function checkAlphabets(field){
-    if(/(?=.*[a-zA-Z])/.test(field.value)){
+    if(/[a-zA-Z]+/.test(field.value)){
         setValid(field);
         return true;
     } else{
