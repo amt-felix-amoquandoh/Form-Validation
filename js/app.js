@@ -76,9 +76,9 @@ function setInvalid(field, message){
 }
 
 function setValid(field){
-    field.className = "validate"
-    field.nextElementSibling.innerHTML = " ";
-    // field.nextElementSibling.style.color = validColor;
+    field.className = "input.valid"
+    field.nextElementSibling.innerHTML = "";
+    field.nextElementSibling.style.color = validColor;
 }
 
 
