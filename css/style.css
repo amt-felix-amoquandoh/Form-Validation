@@ -26,5 +26,11 @@ form div input{
     border-radius: 8px;
     outline: none;
     padding: 3px 7px;
-    caret-color: rgb(255, 60, 0);
+    caret-color: rgb(43, 255, 0);
+    border: 2px solid #c4c4c4;
+    box-shadow: 1px 1px 2px grey;
+}
+
+form div input{
+    margin-bottom: 15px;
 }
