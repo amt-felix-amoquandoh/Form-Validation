@@ -1,3 +1,4 @@
+let mainForm = document.getElementById("formMain");
 let userName = document.getElementById("username");
 let email = document.getElementById("email");
 let passWord = document.getElementById("password");
