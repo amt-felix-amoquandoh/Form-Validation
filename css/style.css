@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+   
+}
+
 form{
     max-width: 400px;
     box-shadow: 2px 2px 4px grey;
@@ -45,4 +49,12 @@ label{
     position: absolute;
     padding: 10px;
 }
+
+.errorMsg{
+    color: red;
+    margin-top: 4px;
+}
  
+.btn{
+    color: #3FBAED;
+}
