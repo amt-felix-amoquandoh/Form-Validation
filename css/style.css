@@ -93,6 +93,8 @@ input:focus{
 .errorMsg{
     color: red;
     margin-top: 4px;
+    font-weight: bold;
+    font-size: 14.5px;
 }
  
 .submitBtn a {
