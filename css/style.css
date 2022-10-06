@@ -96,6 +96,10 @@ input:focus{
     font-weight: bold;
     font-size: 0.9rem;
 }
+
+.iconOpacity{
+  opacity: 1;
+}
  
 .submitBtn button {
     width: 100%;
