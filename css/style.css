@@ -80,10 +80,14 @@ input:focus{
 
 .redIcon{
     color: red;
+    opacity: 0;
+    right: 0;
 }
 
 .greenIcon{
     color: green;
+    opacity: 0;
+    right: 0;
 }
 
 .errorMsg{
@@ -110,13 +114,13 @@ input:focus{
   }
   
   .submitBtn a:hover {
-    background: #F08179;
+    background: #1f90f5;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #F08179,
-                0 0 25px #F08179,
-                0 0 50px #F08179,
-                0 0 100px #F08179;
+    box-shadow: 0 0 5px #1f90f5,
+                0 0 25px #1f90f5,
+                0 0 50px #1f90f5,
+                0 0 100px #1f90f5;
   }
   
   .submitBtn a span {
@@ -129,7 +133,7 @@ input:focus{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #F08179);
+    background: linear-gradient(90deg, transparent, #1f90f5);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -147,7 +151,7 @@ input:focus{
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #F08179);
+    background: linear-gradient(180deg, transparent, #1f90f5);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -166,7 +170,7 @@ input:focus{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #F08179);
+    background: linear-gradient(270deg, transparent, #1f90f5);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -185,7 +189,7 @@ input:focus{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #F08179);
+    background: linear-gradient(360deg, transparent, #1f90f5);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }
