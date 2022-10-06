@@ -6,3 +6,8 @@ let errorMessage = document.getElementsByClassName("errorMsg");
 let valid = document.getElementsByClassName("greenIcon");
 let invalid = document.getElementsByClassName("red");
 
+
+mainForm.addEventListener("submit", function(){
+    errorMessage[2].innerHTML = "fuuuuuuuuuucccc"
+})
+
