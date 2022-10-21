@@ -35,7 +35,7 @@ form{
 }
 
 .option1{
-  font-size: 15px;
+  font-size: 15px;  
 }
 
 .option2{
@@ -46,6 +46,31 @@ form{
   color: #F08179;
   cursor: pointer;
   font-weight: bold;
+}
+
+.mediaIcons{
+  height: 50px;
+  width: auto;
+  margin: 2px 8px;
+}
+
+.btnGoogle, .btnFacebook{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
 form div input{
