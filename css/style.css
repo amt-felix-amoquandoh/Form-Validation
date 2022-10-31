@@ -15,16 +15,39 @@ body{
 
 .container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 
+.imgSection{
+  background-color: #F08179;
+  width: 45%;
+  min-height: 95vh;
+  padding: 10px 20px;
+}
+
+.imgSectionImage{
+  background-image: url("../media/undraw_team_up_re_84ok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 70vh;
+}
+
+.brandImage{
+  width: 180px;
+  height: 100px;
+  margin: 5px;
+}
+
 form{
-    max-width: 500px;
+    width: 40%;
     box-shadow: 2px 2px 4px grey;
     padding: 50px;
     background-color: #333745;
+    min-height: 95vh;
 }
 
 .mainTitle{
@@ -74,7 +97,7 @@ form{
 }
 
 .btnFacebook{
-  background-color: rgb(66, 103, 178);
+  background-color: rgb(59, 89, 153);
 }
 
 form div input{
