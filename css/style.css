@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 form{
@@ -40,6 +40,13 @@ form{
 
 .option2{
   text-align: center;
+  margin-bottom: -10px;
+}
+
+.options{
+  color: azure;
+  margin-top: -15px;
+  font-weight: bolder;
 }
 
 .options > span {
@@ -49,28 +56,25 @@ form{
 }
 
 .mediaIcons{
-  height: 50px;
+  height: 40px;
   width: auto;
   margin: 2px 8px;
 }
 
 .btnGoogle, .btnFacebook{
- 
+ font-weight: bolder;
   display: flex;
-  
+  color: azure;
   justify-content: center;
   align-items: center;
   border: 2px solid grey;
   padding: 8px 0;
   border-radius: 8px;
-  box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
+ 
+}
+
+.btnFacebook{
+  background-color: rgb(66, 103, 178);
 }
 
 form div input{
