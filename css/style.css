@@ -70,7 +70,10 @@ form{
 
 .option2{
   text-align: center;
-  margin-bottom: -10px;
+  
+  font-size: large;
+  color: white;
+  font-weight: bold;
 }
 
 .options{
@@ -100,11 +103,16 @@ form{
   border: 2px solid grey;
   padding: 8px 0;
   border-radius: 8px;
+  width: 60%;
  
 }
 
 .btnFacebook{
   background-color: rgb(59, 89, 153);
+}
+
+.btnGoogle{
+  background-color: #3a8fe4;
 }
 
 form div input{
