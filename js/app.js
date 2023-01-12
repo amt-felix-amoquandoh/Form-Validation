@@ -21,8 +21,10 @@ let formEngine = function (id, number, message){
 
 mainForm.addEventListener("submit", function(e){
     e.preventDefault();
-    formEngine(userName, 0, "username cannot be blank");
-    formEngine(email, 1, "email should not be blank");
-    formEngine(passWord, 2, "password must contain letter and numbers");
+    let validUser = formEngine(userName, 0, "username cannot be blank");
+    let validEmail = formEngine(email, 1, "email should not be blank");
+    let validPass = formEngine(passWord, 2, "password must contain letter and numbers");
+
+    console.log(validUser)
 })
 
